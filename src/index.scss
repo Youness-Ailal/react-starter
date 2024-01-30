@@ -1,0 +1,86 @@
+$color-bg: rgb(11, 25, 46);
+$color-bg-2: rgb(2, 34, 60, 0.6);
+$color-bg-3: rgb(1, 31, 55, 0.6);
+
+$color-stroke: rgba(22, 53, 78, 0.6);
+
+$color-text: #ccd7f7;
+
+$color-white: #e5eafb;
+
+$color-green: #64ffda;
+$color-green-hover: rgb(100, 255, 218, 0.8);
+
+$radius-tiny: 2px;
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 10px;
+
+$section-space: 15vh;
+
+$border-1: 1px solid $color-stroke;
+$border-2: 2px solid $color-stroke;
+
+/*************** Global reset ********************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: clamp(8px, 1vw, 10px);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: $color-bg;
+  color: #000;
+  line-height: 1.6;
+  font-weight: 400;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+a {
+  background-color: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 0.2rem;
+  transition: 0s;
+}
+
+/***********************************/
